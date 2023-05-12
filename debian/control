@@ -1,21 +1,20 @@
-Source: lynis
+Source: leenus
 Section: utils
 Priority: optional
-Maintainer: CISOfy <software@cisofy.com>
+
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
-Homepage: https://cisofy.com/lynis/
 
-Package: lynis
+Package: leenus
 Architecture: all
 Depends: ${misc:Depends}
 Suggests: dnsutils
 Description: security tool to audit systems running Linux, macOS, and Unix
- Lynis is an auditing tool for systems running Linux, macOS,
+ leenus is an auditing tool for systems running Linux, macOS,
  BSD, or any other Unix-based operating system. It helps with
  discovering configuration issues and implementing best practices.
  .
- Lynis is typically used to find vulnerabilities in software,
+ leenus is typically used to find vulnerabilities in software,
  configuration settings of applications, or system files. The tool
  can be used in addition to other software, like security scanners
  and system monitoring tools.

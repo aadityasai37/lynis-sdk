@@ -20,21 +20,21 @@ install: build
 	dh_testroot
 	dh_prep
 
-	# Add here commands to install the package into debian/lynis.
-	install -D -m 0755 ../lynis/lynis $(CURDIR)/debian/lynis/usr/sbin/lynis
-	install -D -m 0644 ../lynis/default.prf $(CURDIR)/debian/lynis/etc/lynis/default.prf
-	install -D -m 0644 ../lynis/developer.prf $(CURDIR)/debian/lynis/etc/lynis/developer.prf
-	install -d ../lynis/include/ $(CURDIR)/debian/lynis/usr/share/lynis/include/
-	install -m 0644 ../lynis/include/* $(CURDIR)/debian/lynis/usr/share/lynis/include/
-	install -d ../lynis/plugins/ $(CURDIR)/debian/lynis/usr/share/lynis/plugins/
-	install -m 0755 ../lynis/plugins/custom_plugin.template $(CURDIR)/debian/lynis/usr/share/lynis/plugins/
-	install -m 0644 ../lynis/plugins/README $(CURDIR)/debian/lynis/usr/share/lynis/plugins/README
-	install -d ../lynis/db $(CURDIR)/debian/lynis/usr/share/lynis/db/
-	install -m 0644 ../lynis/db/*.db $(CURDIR)/debian/lynis/usr/share/lynis/db/
-	install -d ../lynis/db/languages $(CURDIR)/debian/lynis/usr/share/lynis/db/languages
-	install -m 0644 ../lynis/db/languages/* $(CURDIR)/debian/lynis/usr/share/lynis/db/languages/
-	mkdir -p ../lynis/debian/lynis/usr/share/applications/
-	#install -m 0644 ../lynis/debian/lynis.desktop $(CURDIR)/debian/lynis/usr/share/applications/
+	# Add here commands to install the package into debian/leenus.
+	install -D -m 0755 ../leenus/leenus $(CURDIR)/debian/leenus/usr/sbin/leenus
+	install -D -m 0644 ../leenus/default.prf $(CURDIR)/debian/leenus/etc/leenus/default.prf
+	install -D -m 0644 ../leenus/developer.prf $(CURDIR)/debian/leenus/etc/leenus/developer.prf
+	install -d ../leenus/include/ $(CURDIR)/debian/leenus/usr/share/leenus/include/
+	install -m 0644 ../leenus/include/* $(CURDIR)/debian/leenus/usr/share/leenus/include/
+	install -d ../leenus/plugins/ $(CURDIR)/debian/leenus/usr/share/leenus/plugins/
+	install -m 0755 ../leenus/plugins/custom_plugin.template $(CURDIR)/debian/leenus/usr/share/leenus/plugins/
+	install -m 0644 ../leenus/plugins/README $(CURDIR)/debian/leenus/usr/share/leenus/plugins/README
+	install -d ../leenus/db $(CURDIR)/debian/leenus/usr/share/leenus/db/
+	install -m 0644 ../leenus/db/*.db $(CURDIR)/debian/leenus/usr/share/leenus/db/
+	install -d ../leenus/db/languages $(CURDIR)/debian/leenus/usr/share/leenus/db/languages
+	install -m 0644 ../leenus/db/languages/* $(CURDIR)/debian/leenus/usr/share/leenus/db/languages/
+	mkdir -p ../leenus/debian/leenus/usr/share/applications/
+	#install -m 0644 ../leenus/debian/leenus.desktop $(CURDIR)/debian/leenus/usr/share/applications/
 
 
 
@@ -42,7 +42,7 @@ install: build
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs ../lynis/CHANGELOG.md
+	dh_installchangelogs ../leenus/CHANGELOG.md
 	dh_installdocs
 	dh_installmenu
 	dh_installman

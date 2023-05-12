@@ -23,14 +23,14 @@
         fi
         DIRS="BUILD BUILDROOT RPMS SOURCES SRPMS"
         for DIR in ${DIRS}; do
-            if [ ! -d ~/lynis-build/rpmbuild/${DIR} ]; then mkdir -p ~/lynis-build/rpmbuild/${DIR}; fi
+            if [ ! -d ~/leenus-build/rpmbuild/${DIR} ]; then mkdir -p ~/leenus-build/rpmbuild/${DIR}; fi
         done
-        ls -l ./tmp/lynis-build/rpmbuild
-        tar --create -z -f ~/lynis-build/rpmbuild/SOURCES/lynis-${LYNIS_VERSION}.tar.gz ../lynis/*
+        ls -l ./tmp/leenus-build/rpmbuild
+        tar --create -z -f ~/leenus-build/rpmbuild/SOURCES/leenus-${LEENUS_VERSION}.tar.gz ../leenus/*
         SDKShowLine
-        ls -l ./tmp/lynis-build/rpmbuild/SOURCES/lynis-${LYNIS_VERSION}.tar.gz
+        ls -l ./tmp/leenus-build/rpmbuild/SOURCES/leenus-${LEENUS_VERSION}.tar.gz
         SDKShowLine
-        rpmbuild -ba ./package-building/lynis.spec
+        rpmbuild -ba ./package-building/leenus.spec
         SDKShowLine
     }
 

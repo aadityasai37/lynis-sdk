@@ -1,6 +1,6 @@
 #!/bin/sh
 
-   # Check number of parameters submitted (at least one is needed)
+   # Check number of parameters submitted 
     PARAMCOUNT=$#
     while [ $# -ge 1 ]; do
         case $1 in

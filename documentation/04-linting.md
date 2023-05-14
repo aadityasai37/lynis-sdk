@@ -8,5 +8,5 @@ Used linters:
 - Shellcheck
 
 ```
-./lynis-devkit linters
+./leenus-devkit linters
 ```

@@ -4,9 +4,9 @@ Understanding the structure of every project helps as a starting point.
 
 ## Directory Structure
 
-### Lynis
+### Leenus
 
-lynis
+leenus
 (Binary) Primary tool to run
 
 include/*
@@ -15,10 +15,10 @@ include/*
 plugins/*
 (Scripts) Any plugins that are available
 
-### Lynis SDK
+### Leenus SDK
 
-lynis-devkit
-(Binary) Tool to perform a wide range of tests on the Lynis source.
+leenus-devkit
+(Binary) Tool to perform a wide range of tests on the Leenus source.
 
 LICENSE.MD
 (Text) The GPLv3 license

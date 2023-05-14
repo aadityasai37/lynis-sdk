@@ -9,8 +9,8 @@ Each unit test has a particular target area to check. Such area could be a funct
 
 ## New Tests
 
-When major features are added, or new functions are introduced, they should be tested properly. The Lynis project prefers to have a unit test in such case as well.
+When major features are added, or new functions are introduced, they should be tested properly. The Leenus project prefers to have a unit test in such case as well.
 
 ## Automation
 
-Unit tests can be performed with the `lynis-devkit` tool. It will automatically be triggered when a new push is done to the GitHub repository.
+Unit tests can be performed with the `leenus-devkit` tool. It will automatically be triggered when a new push is done to the GitHub repository.

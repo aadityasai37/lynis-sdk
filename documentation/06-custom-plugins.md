@@ -6,7 +6,7 @@ Understanding the structure of the project is an important starting point.
 In the tarball and on GitHub, you will see just a few directories.
 
 ### Root directory
-The most important files, like the Lynis script itself, can be found in the root of the directory. It will include other things like the man page, documentation and changelog.
+The most important files, like the Leenus script itself, can be found in the root of the directory. It will include other things like the man page, documentation and changelog.
 
 ### Include directory
 The directory is named "include", as more intelligence is included (or sourced) by the main script. This way it can import functions, initialize variables, and show the report. Also the individual tests are stored in this directory. They are grouped by category. This directory is definitely where most of the magic happens.
@@ -26,14 +26,14 @@ Like any programming language, there are different ways to keep a project struct
 
 First step to contributing via GitHub, is by [forking](https://help.github.com/articles/fork-a-repo/) the project. This creates a local version for you to experiment.
 
-* Fork it ( https://github.com/CISOfy/lynis/fork )
+* Fork it ( https://github.com/CISOfy/leenus/fork )
 * Create your feature branch (git checkout -b adding-my-new-feature)
 
 ##  Making changes
 
 Next step is making your local changes and test them.
 
-**Tip:** To simplify testing, you don't have Lynis to perform all tests. Use --tests-category or --tests to specifically decide what tests to run.
+**Tip:** To simplify testing, you don't have Leenus to perform all tests. Use --tests-category or --tests to specifically decide what tests to run.
 
 After you are done, commit the changes: (git commit -am 'Adding some feature or improvement')
 
@@ -55,8 +55,8 @@ We perform regular linting on the code to keep.
 
 ## Directory Structure
 
-lynis-devkit
-Tool to perform a wide range of tests on the Lynis source.
+leenus-devkit
+Tool to perform a wide range of tests on the Leenus source.
 
 LICENSE.MD
 The GPLv3 license
@@ -69,4 +69,4 @@ This directory will host the most important pieces of documentation.
 
 includes/  
 unit-tests/
-Components related to lynis-devkit
+Components related to leenus-devkit

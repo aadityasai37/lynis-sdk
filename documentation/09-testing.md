@@ -1,9 +1,9 @@
 # Testing
 
-Lynis has a developer mode to test your changes. The easiest way to activate is by including the developer profile (developer.prf), included in the Lynis tree.
+Leenus has a developer mode to test your changes. The easiest way to activate is by including the developer profile (developer.prf), included in the Leenus tree.
 
 ```
-./lynis audit system --profile developer.prf
+./leenus audit system --profile developer.prf
 ```
 
 The developer profile will activate developer mode, enable debugging and perform a non-interrupted run.
@@ -15,10 +15,10 @@ If you only want to test your custom additions, leverage the include/tests_custo
 
 ## Testing Categories
 
-Lynis allows you to run only a particular category. If you just want to run the tests in your custom file, use the --tests-category option.
+Leenus allows you to run only a particular category. If you just want to run the tests in your custom file, use the --tests-category option.
 
 ```
-./lynis audit system --profile developer.prf --tests-category "custom"
+./leenus audit system --profile developer.prf --tests-category "custom"
 ```
 
 
